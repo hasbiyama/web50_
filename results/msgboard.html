@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>訪客留言 - msgboard</title>
+	<style>
+		table {
+		  border-collapse: collapse;
+		  width: auto;
+		}
+		
+		.tablinks {
+		  border: 4px solid #dddddd;
+		  border-collapse: collapse;
+		  color: black;
+		  font-size: 14px;
+		}
+		
+		td, th {
+		  border: 1px solid #dddddd;
+		  padding: 2px;
+		  font-size: 14px;
+		  text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<table>
+		<br>
+		<marquee direction="left">謝謝蒞臨本網站,請給予我們支持、鼓勵與建言......</marquee>
+		<br>
+		<p style="color: red;">	<b>現在位置:首頁 > 訪客留言</b>
+		</p>
+		<p>
+			<tr>
+				<td>姓名</td>
+				<td style="text-align: left; ">
+					<form id="myForm" action="/action_page.php">
+						<input style="width: 120px;" type="text" id="fname" name="fname" value="">
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td>電子郵件</td>
+				<td style="text-align: left; ">
+					<form id="myFormA">
+						<input style="width: 580px;" type="text" id="fname" name="fname" value="">
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td>性別</td>
+				<td style="text-align: left; ">
+					<form id="myFormB">
+						<input type="radio" id="fname" name="fname" value="">
+						<label for="male">男</label>
+						<input type="radio" id="fname" name="fname" value="">
+						<label for="female">女</label>
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td>職業類別</td>
+				<td style="text-align: left; ">
+					<form id="myFormC">
+						<select style="font-size: 14px; text-align: center;" name="職業類別" id="職業類別">
+							<option value="選擇">--------------請選擇職業類別--------------</option>
+							<option value="現役軍人">現役軍人</option>
+							<option value="民意代表、行政主管、企業主管及經理人員">民意代表、行政主管、企業主管及經理人員</option>
+							<option value="專業人員">專業人員</option>
+							<option value="技術員及助理專業人員">技術員及助理專業人員</option>
+							<option value="事務工作人員">事務工作人員</option>
+							<option value="服務工作人員及售貨員">服務工作人員及售貨員</option>
+							<option value="農、林、漁、牧工作人員">農、林、漁、牧工作人員</option>
+							<option value="技術工及有關工作人員">技術工及有關工作人員</option>
+							<option value="機械設備操作工及組裝工">機械設備操作工及組裝工</option>
+							<option value="非技術工及體力工">非技術工及體力工</option>
+						</select>
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td>留言內容</td>
+				<td style="text-align: left;">
+					<form id="myFormD">
+						<input style="height: 130px; width: 620px;" type="text" id="fname" name="fname" value="">
+					</form>
+				</td>
+			</tr>
+			<tr class="tb2">
+				<td>
+					<button style="font-size: 12px;" class="tablinks" onclick="topicS()">送出
+						<script>
+							function topicS() {
+							                                                        alert("歡迎蒞臨本網站, 您的寶貴意見我們會儘速處理與回覆, 謝謝!");
+							                                                          document.getElementById('myForm').reset();
+							                                                          document.getElementById('myFormA').reset();
+							                                                          document.getElementById('myFormB').reset();
+							                                                          document.getElementById('myFormC').reset();
+							                                                          document.getElementById('myFormD').reset();                                                       
+							                                                        }
+						</script>
+					</button>
+					<button style="font-size: 12px;" class="tablinks" onclick="topicSa()">重寫
+						<script>
+							function topicSa() {
+							                                                          document.getElementById('myForm').reset();
+							                                                          document.getElementById('myFormA').reset();
+							                                                          document.getElementById('myFormB').reset();
+							                                                          document.getElementById('myFormC').reset();
+							                                                          document.getElementById('myFormD').reset();
+							                                                        }
+						</script>
+					</button>
+					<td></td>
+				</td>
+			</tr>
+		</p>
+	</table>
+</body>
+
+</html>

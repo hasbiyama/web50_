@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		th, td {
+		  border: 1px solid #333333;
+		  border-collapse: collapse;
+		  background-color: #333333;
+		  width: auto;
+		  font-size: 14px;
+		  text-align: center;
+		}
+		* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+	</style>
+</head>
+
+<body>
+	<div class="row">
+		<div class="column">
+			<table>
+				<tr>
+					<td style="
+			border: 1px solid white; 
+		 	 border-collapse: collapse;
+			color: black;
+			padding: 20px;
+			font-size: 16px;
+			text-align: left;
+			background-color: white;"> <b>最新消息</td></b>
+				</tr>
+				<tr>
+					<td style="text-align: center;
+		  padding: 2px;
+		  background-color: #3399FF;
+		  border: 1px solid #3399FF; 
+		  border-collapse: collapse;">主題</td>
+					<td style="text-align: center;
+		  padding: 2px;
+		  background-color: #3399FF;
+		  border: 1px solid #3399FF; 
+		  border-collapse: collapse;">發布日期</td>
+				</tr>
+				<tr>
+					<td style="text-align: left;
+		  padding: 2px;
+		  font-size: 14px;
+		  background-color: #FFFFCC;
+		  border: 1px solid #dfdfdf; 
+		  border-collapse: collapse;">
+						<img src="../images/0201.png" width="12px" height="12px">公告全國技能競賽相關事宜</td>
+					<td id="time1" style="text-align: center;
+		  padding: 2px;
+		  font-size: 14px;
+		  background-color: #FFFFCC;
+		  border: 1px solid #dfdfdf; 
+		  border-collapse: collapse;">
+						<script>
+							var dt = new Date();
+												document.getElementById("time1").innerHTML = dt.toLocaleDateString();
+						</script>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: left;
+		padding: 2px;
+		font-size: 14px;
+		background-color: #DDDDDD;
+		border: 1px solid #dfdfdf; 
+		border-collapse: collapse;">
+						<img src="../images/0201.png" width="12px" height="12px">公告即測即評及發證相關事宜</td>
+					<td id="time2" style="text-align: center;
+		padding: 2px;
+		font-size: 14px;
+		background-color: #DDDDDD;
+		border: 1px solid #dfdfdf; 
+		border-collapse: collapse;">
+						<script>
+							var dt = new Date();
+												  document.getElementById("time2").innerHTML = dt.toLocaleDateString();
+						</script>
+				</tr>
+				<tr>
+					<td style="text-align: left;
+		  padding: 2px;
+		  font-size: 14px;
+		  background-color: #FFFFCC;
+		  border: 1px solid #dfdfdf; 
+		  border-collapse: collapse;">
+						<img src="../images/0201.png" width="12px" height="12px">公告網頁設計修題相關事宜</td>
+					<td id="time3" style="text-align: center;
+		  padding: 2px;
+		  font-size: 14px;
+		  background-color: #FFFFCC;
+		  border: 1px solid #dfdfdf; 
+		  border-collapse: collapse;">
+						<script>
+							var dt = new Date();
+												document.getElementById("time3").innerHTML = dt.toLocaleDateString();
+						</script>
+				</tr>
+				<tr>
+					<td style="text-align: left;
+		  padding: 2px;
+		  font-size: 14px;
+		  background-color: #DDDDDD;
+		  border: 1px solid #dfdfdf; 
+		  border-collapse: collapse;">
+						<img src="../images/0201.png" width="12px" height="12px">公告網路架設應檢相關事宜</td>
+					<td id="time4" style="text-align: center;
+		  padding: 2px;
+		  font-size: 14px;
+		  background-color: #DDDDDD;
+		  border: 1px solid #dfdfdf; 
+		  border-collapse: collapse;">
+						<script>
+							var dt = new Date();
+												  document.getElementById("time4").innerHTML = dt.toLocaleDateString();
+						</script>
+				</tr>
+			</table>
+		</div>
+		<div class="column">
+			<table style="border: 1px solid #333333;
+		  border-collapse: collapse;
+		  background-color: #333333;">
+				<tr>
+					<td style="padding: 4px;">
+						<img src="../images/0202A.png" id="prime" style="width:580px; height:400px;">
+					</td>
+				</tr>
+			</table>
+			<table style="
+		border: 1px solid #333333;
+		  border-collapse: collapse;
+		  background-color: #333333;">
+				<tr>
+					<td style="padding-left: 20px;">
+						<img src="../images/0202A.png" onclick="document.getElementById('prime').src='../images/0202A.png'" style="width: 120px; height: 90px;">
+					</td>
+					<td style="padding-left: 20px;">
+						<img src="../images/0203A.png" onclick="document.getElementById('prime').src='../images/0203A.png'" style="width: 120px; height: 90px;">
+					</td>
+					<td style="padding-left: 20px;">
+						<img src="../images/0204A.png" onclick="document.getElementById('prime').src='../images/0204A.png'" style="width: 120px; height: 90px;">
+					</td>
+					<td style="padding-left: 20px; padding-right: 22px;">
+						<img src="../images/0205A.png" onclick="document.getElementById('prime').src='../images/0205A.png'" style="width: 120px; height: 90px;">
+					</td>
+				</tr>
+				<tr>
+					<td style="color: yellow;">&nbsp;&nbsp;&nbsp;&nbsp; 第30屆倫敦奧運</td>
+					<td style="color: yellow;">&nbsp;&nbsp; 許淑淨奪舉重銀牌</td>
+					<td style="color: yellow;">&nbsp;&nbsp;&nbsp; 第26屆深圳世大運</td>
+					<td style="color: yellow;">&nbsp; 第27屆喀山世大運</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+
+</html>
